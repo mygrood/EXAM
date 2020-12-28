@@ -1,0 +1,30 @@
+﻿<Page x:Class="EXAM.pages.mainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:EXAM.pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="900"
+      Title="mainPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="7*"/>
+            <RowDefinition Height="68*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="450*"/>
+            <ColumnDefinition Width="450*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="ASSEMBLER" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"/>
+        <StackPanel Grid.Row="1" Grid.Column="0">
+            <TextBlock  VerticalAlignment="Top">Введите ассемблерный код:</TextBlock>
+            <TextBox AcceptsReturn="True" Name="txbCodeInput" Width="400" Height="300" ScrollViewer.CanContentScroll="True"></TextBox>
+            <Button Name="btnCheck" Click="btnCheck_Click">Запустить</Button>
+            <Button Name="btnFile" Click="btnFile_Click">Считать из файла</Button>
+            <Button Name="btnWriteFile" Click="btnWriteFile_Click">Записать в файл</Button>
+        </StackPanel>
+       
+    </Grid>
+</Page>

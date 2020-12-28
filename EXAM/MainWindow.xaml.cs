@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EXAM.pages;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,7 +25,8 @@ namespace EXAM
         {
             InitializeComponent();
             FrameLoad.FrameM =frameMain;
-           // FrameLoad.FrameM.Navigate(new startSign());
+           FrameLoad.FrameM.Navigate(new startLog());
+            BaseConnect.BaseModel = new Entities();
 
         }
     }

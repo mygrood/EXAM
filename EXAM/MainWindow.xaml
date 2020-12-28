@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:EXAM"
         mc:Ignorable="d"
         Title="exam" Height="600" Width="900">
-    <Grid>
+    <Grid Background="LimeGreen">        
         <Frame Name="frameMain">
             
         </Frame>
